@@ -6,7 +6,7 @@ var allDrawing;
 
 
 function setup(){
-    canvas = createCanvas(400,400);
+    canvas = createCanvas(displayWidth-20,displayHeight-20);
     canvas.mousePressed(startPath);
     canvas.mouseReleased(endPath);
     database = firebase.database();
